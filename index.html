@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Management Dashboard</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container mt-5">
+  <h1 class="text-center">Task Management Dashboard</h1>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-header">
+          <h4>Create/Edit a Task</h4>
+        </div>
+        <div class="card-body">
+          <form id="task-form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="task-input" placeholder="Enter a new task" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="task-button">Add Task</button>
+          </form>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-header">
+          <h4>Task List</h4>
+        </div>
+        <ul class="list-group list-group-flush" id="task-list">
+          <!-- Task items will be added here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
